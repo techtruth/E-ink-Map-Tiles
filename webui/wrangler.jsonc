@@ -1,5 +1,5 @@
 {
-  "name": "eink-map-tiles",
+  "name": "meshtastic-eink-mapgenerator",
   "compatibility_date": "2026-10-21",
   "assets": {
     "directory": "./dist",

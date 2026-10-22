@@ -31,7 +31,7 @@ When connecting this repository in **Workers & Pages → Create application**, u
 
 Cloudflare installs the locked npm dependencies before running the build. The build command performs TypeScript compilation and creates the production assets; Wrangler then uploads the generated `dist/` directory described by `wrangler.jsonc`. No server-side Worker entry point is required for this browser-only application.
 
-The Wrangler `name` is `eink-map-tiles`. Use the same name when creating the Cloudflare Worker, or update the name in `wrangler.jsonc` to match an existing Worker before connecting the repository.
+The Wrangler `name` is `meshtastic-eink-mapgenerator` and matches the connected Cloudflare Worker. Update the name in `wrangler.jsonc` if deploying this repository as a differently named Worker.
 
 From the repository root, `./scripts/eink-map-tiles.sh --ui=web` on Unix-like systems or `.\scripts\eink-map-tiles.ps1 --ui=web` on Windows installs locked dependencies when `node_modules/` is absent, builds this application, and serves `dist/` through Node/Vite. Python is not involved in the Web UI runtime. Use `npm run dev` directly when you want Vite’s development server and hot-module replacement.
 
